@@ -35,7 +35,7 @@
 
                 <mat-form-field appearance="fill" class="m-1 mb-2 w-100">
                     <mat-label>Password<span class="text-danger m-1">*</span></mat-label>
-                    <input matInput placeholder="Enter Password" type="text" formControlName="Pwd" minlength="6">
+                    <input matInput placeholder="Enter Password" type="password" formControlName="Pwd" minlength="6" autocomplete="off">
                     <mat-error *ngIf="signUpForm.get('Pwd').invalid">This field is required</mat-error>
                     <mat-hint>Password must have at least 6 characters.</mat-hint>
                 </mat-form-field>

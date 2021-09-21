@@ -11,10 +11,10 @@ export class AppComponent {
 
   constructor(private sharedSrv: SharedService) {}
 
+  /** To detect browser close for restricting user from window close if any item is present in cart */
   @HostListener('window:beforeunload', ['$event'])
   beforeunloadHandler(event: any) {
     event.preventDefault();
-    localStorage.removeItem('registeredUser');
     if(this.sharedSrv.getCartItems().length) {
       return false
     }

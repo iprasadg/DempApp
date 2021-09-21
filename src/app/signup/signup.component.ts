@@ -16,6 +16,7 @@ export class SignUpComponent implements OnInit {
     constructor(private formBuilder: FormBuilder, private signUpSrv: SignUpService, private router: Router) {}
 
     ngOnInit() {
+        /** Reactive form with controls */
         this.signUpForm = this.formBuilder.group({
             FirstName: ['', [Validators.required]],
             LastName: ['', [Validators.required]],
@@ -26,6 +27,7 @@ export class SignUpComponent implements OnInit {
         })
     }
 
+    /** For user registration */
     signUp() {
         this.submitted = 1;
         const formData = this.signUpForm.value;
@@ -39,11 +41,12 @@ export class SignUpComponent implements OnInit {
         })
     }
 
+    /** To display different error messages for email */
     emialErr() {
         if (this.signUpForm.get('Email').hasError('required')) {
             return 'This field is required';
           }
       
-          return this.signUpForm.get('Email').hasError('email') ? 'Not a valid email' : '';
+        return this.signUpForm.get('Email').hasError('email') ? 'Not a valid email' : '';
     }
 }

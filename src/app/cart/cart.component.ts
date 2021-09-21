@@ -1,4 +1,3 @@
-import { error } from "@angular/compiler/src/util";
 import { Component, OnInit } from "@angular/core";
 import { SharedService } from "src/app/shared.service";
 
@@ -11,6 +10,7 @@ export class CartComponent implements OnInit {
     cartItems = [];
     constructor(private sharedSrv: SharedService) {}
 
+    /** To get cart items */
     ngOnInit() {
         this.cartItems = this.sharedSrv.getCartItems();
     }

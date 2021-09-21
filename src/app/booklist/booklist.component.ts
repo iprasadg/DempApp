@@ -28,6 +28,7 @@ export class BookListComponent implements OnInit {
         })
     }
 
+    /** To add item in cart */
     cart(book: Object, index: number) {
         if(this.adddedToCart[index] !== 'Go to Cart') {
             book['index'] = index;
