@@ -1,0 +1,21 @@
+sign-up {
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%
+    }
+
+    .sign-up-block {
+        width: 450px;
+        border: 1px solid #dadce0;
+        padding: 24px
+    }
+
+    .progress-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 4px 4px 0 0
+    }
+}

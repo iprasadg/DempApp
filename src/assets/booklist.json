@@ -1,0 +1,26 @@
+[
+    {
+      "author": "Chinua Achebe",
+      "quantity": 100,
+      "pubDate": "8/12/2019",
+      "avlblty": true
+    },
+    {
+        "author": "Andy Weir",
+        "quantity": 120,
+        "pubDate": "14/6/2015",
+        "avlblty": true
+    },
+    {
+        "author": "Hans Christian Andersen",
+        "quantity": 0,
+        "pubDate": "4/6/2012",
+        "avlblty": false
+    },
+    {
+        "author": "Dante Alighieri",
+        "quantity": 1000,
+        "pubDate": "21/1/2020",
+        "avlblty": true
+    }
+]
